@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:43:18 by mlarra            #+#    #+#             */
-/*   Updated: 2022/11/11 12:04:18 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/11/11 15:10:25 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,16 @@ int	main()
 {
 	Span sp = Span(5);
 
-	sp.addNumber(6);//3
-	sp.addNumber(3);//6: 3
-	sp.addNumber(17);//9: 3
-	sp.addNumber(9);//11: 2 = sp.shortestSpan()
-	sp.addNumber(11);//17: 6 = sp.longestSpan()
+	sp.addNumber(6);
+	sp.addNumber(3);
+	sp.addNumber(17);
+	sp.addNumber(9);
+	sp.addNumber(11);
 
 	std::cout << "Span: ";
 	sp.printSpan();
 	std::cout << "shortest: " << sp.shortestSpan() << std::endl;
 	std::cout << "longest: " << sp.longestSpan() << std::endl;
-	
-
-	/*
 	try
 	{
 		std::cout << "Test with 1 element" << std::endl;
@@ -42,8 +39,6 @@ int	main()
 	{
 		std::cerr << e.what() << '\n';
 	}
-*/
-/*
 	try
 	{
 		std::cout << "Test with too many elements" << std::endl;
@@ -58,8 +53,6 @@ int	main()
 	{
 		std::cerr << e.what() << '\n';
 	}
-	*/
-	// /*
 	try
 	{
 		Span	sp10 = Span(10);
@@ -71,7 +64,6 @@ int	main()
 	{
 		std::cerr << e.what() << '\n';
 	}
-	// */
 	try
 	{
 		Span	sp10000 = Span(10000);
