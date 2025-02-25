@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:50:32 by mlarra            #+#    #+#             */
-/*   Updated: 2022/11/11 11:59:51 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/11/11 16:34:00 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int	Span::longestSpan()
 
 	if (arr.size() < 2)
 		throw (std::length_error("Exception: Span is too small"));
-	rez = std::max_element(arr.begin(), arr.end()) - std::min_element(arr.begin(), arr.end());
+	rez = *std::max_element(arr.begin(), arr.end()) - *std::min_element(arr.begin(), arr.end());
 	return (rez);
 }
 
